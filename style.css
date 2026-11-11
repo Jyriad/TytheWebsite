@@ -544,6 +544,138 @@ img.step-visual {
 
 .beta-steps a { color: #fff; font-weight: 600; }
 
+/* ---------- Beta join page ---------- */
+
+.beta-page .beta-hero {
+  padding-top: 56px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.beta-page .beta-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  margin: 0 0 16px;
+}
+
+.beta-page .beta-hero .lead {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin: 0 auto 32px;
+  max-width: 34em;
+}
+
+.slots-callout {
+  background: var(--teal);
+  color: #fff;
+  border-radius: 28px;
+  padding: 28px 24px;
+  box-shadow: 0 0 0 6px rgba(255, 152, 49, 0.3);
+  text-align: center;
+}
+
+.slots-label {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.slots-title {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.slots-remaining {
+  margin: 16px 0 0;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 1rem;
+}
+
+.slots-remaining strong { font-weight: 800; }
+
+.slots-note {
+  margin: 16px auto 0;
+  max-width: 28em;
+  opacity: 0.9;
+}
+
+.beta-explain { background: var(--bg-alt); }
+.beta-explain .tile { background: var(--bg); box-shadow: none; }
+
+.beta-howto {
+  list-style: none;
+  counter-reset: howto;
+  margin: 0 0 36px;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.beta-howto li {
+  counter-increment: howto;
+  position: relative;
+  display: grid;
+  gap: 4px;
+  padding: 20px 22px 20px 68px;
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.beta-howto li::before {
+  content: counter(howto);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+
+.beta-howto strong { font-size: 1.1rem; }
+.beta-howto span { color: var(--muted); }
+
+.beta-cta-block {
+  text-align: center;
+}
+
+.beta-cta-block .button {
+  min-width: 240px;
+}
+
+.beta-cta-block .fine {
+  margin: 16px 0 0;
+  color: var(--muted);
+}
+
+.beta-support {
+  padding-top: 0;
+}
+
+.beta-support .card {
+  box-shadow: 0 0 0 1px var(--line);
+  text-align: center;
+}
+
+.beta-support h2 {
+  margin-top: 0;
+}
+
 /* ---------- FAQ ---------- */
 
 details {
