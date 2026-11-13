@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tythe: earn your screen time, on Mac and iPhone</title>
-  <meta name="description" content="Tythe turns productive work into credits for your favourite apps. Productive apps earn credits, unproductive apps spend them, and when you run out they lock until you've done more work. For Mac and iPhone.">
+  <title>Tythe: stop scrolling, earn your screen time</title>
+  <meta name="description" content="Work in the apps that matter, earn credits, then spend them on the apps you enjoy. Run out, and they lock until you earn more. For Mac and iPhone.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trytythe.com/">
   <meta property="og:title" content="Tythe: earn your screen time">
-  <meta property="og:description" content="Productive work earns credits. Unproductive apps spend them. Run out, and they lock until you've done more work. For Mac and iPhone.">
+  <meta property="og:description" content="Work in the apps that matter, earn credits, then spend them on the apps you enjoy. Run out, and they lock until you earn more.">
   <meta property="og:image" content="https://trytythe.com/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -21,6 +21,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="site-atmosphere" aria-hidden="true">
+    <div class="atmosphere-blob atmosphere-blob-orange"></div>
+    <div class="atmosphere-blob atmosphere-blob-teal"></div>
+    <div class="atmosphere-blob atmosphere-blob-teal-soft"></div>
+  </div>
   <nav class="site-nav">
     <div class="wrap nav-inner">
       <a class="nav-logo" href="#top" aria-label="Tythe home">
@@ -44,8 +49,8 @@
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <p class="eyebrow">Free beta &middot; Mac + iPhone</p>
-          <h1>Earn <span class="hl-orange">screen time</span> through focused work.</h1>
-          <p class="lead">A native local-first app for Mac and iOS that limits distractions across devices. No forced lockouts. Just an exchange rate.</p>
+          <h1>Stop scrolling. Start being productive. Earn your <span class="hl-orange">screen time</span>.</h1>
+          <p class="lead">Work in the apps that matter, earn credits, then spend them on the apps you enjoy. Run out, and those apps lock until you earn more.</p>
           <div class="hero-actions">
             <a class="button" href="beta.html">Join the beta</a>
             <a class="button button-ghost" href="#how">See how it works</a>
@@ -53,117 +58,131 @@
           <p class="fine">Works on an iPhone (iOS 17+), a Mac (macOS 14+), or both together.</p>
         </div>
         <div class="hero-video">
-          <video src="media/tythe-demo.mp4" poster="media/tythe-demo-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="20-second demo of Tythe on Mac and iPhone"></video>
+          <video src="media/tythe-demo.mp4" poster="media/tythe-demo-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Demo of Tythe on Mac and iPhone"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="wrap">
+        <h2 class="section-title reveal">How it works</h2>
+
+        <div class="step reveal">
+          <div class="step-copy">
+            <span class="step-num">1</span>
+            <h3>Choose what <span class="hl-teal">earns</span> and what <span class="hl-orange">costs</span></h3>
+            <p>Pick what earns and what costs — including the kind of website work you do.</p>
+          </div>
+          <video class="step-visual" src="media/how-choose.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Choosing productive and unproductive apps, then typing a work definition"></video>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-copy">
+            <span class="step-num">2</span>
+            <h3>Productive work <span class="hl-teal">earns</span> credits</h3>
+            <p>Productive time fills your shared credit balance.</p>
+          </div>
+          <video class="step-visual" src="media/how-earn.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Credits climbing while editing video"></video>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-copy">
+            <span class="step-num">3</span>
+            <h3>Unproductive screen time <span class="hl-orange">spends</span> them</h3>
+            <p>Unproductive apps and sites spend those credits, on Mac or iPhone.</p>
+          </div>
+          <video class="step-visual" src="media/how-spend.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Credits counting down while scrolling social media"></video>
+        </div>
+
+        <div class="step reveal">
+          <div class="step-copy">
+            <span class="step-num">4</span>
+            <h3>Run out, and they <span class="hl-orange">lock</span></h3>
+            <p>Hit zero and they lock until you earn more.</p>
+          </div>
+          <video class="step-visual" src="media/how-lock.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Apps locking when the credit balance hits zero"></video>
         </div>
       </div>
     </section>
 
     <section class="problem">
       <div class="wrap">
-        <h2 class="section-title">Willpower alone doesn't work.</h2>
+        <h2 class="section-title reveal">Screen blockers punish you. Tythe makes you earn it.</h2>
         <div class="grid-3">
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon tile-icon-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12M6 22h12"/><path d="M7 2c0 6 10 6 10 10S7 16 7 22"/><path d="M17 2c0 6-10 6-10 10s10 4 10 10"/></svg></div>
             <h3>"Just a quick look" becomes an hour</h3>
             <p>Feeds, videos and games are built to keep you there. Screen time adds up before you notice.</p>
           </div>
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon tile-icon-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M5 5l14 14"/></svg></div>
             <h3>Blockers get switched off</h3>
             <p>All-or-nothing app blockers feel like a punishment, so they rarely last more than a few days.</p>
           </div>
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon tile-icon-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 2h6v4H9z"/><path d="M9 12h6M9 16h4"/></svg></div>
             <h3>The important work slips</h3>
             <p>The to-do list stays the same while the scrolling doesn't. Tomorrow, again.</p>
           </div>
         </div>
-        <p class="pivot">Tythe takes a different approach. You don't give up the apps you enjoy. <strong>You earn them.</strong></p>
+        <p class="pivot reveal">Tythe takes a different approach. You don't give up the apps you enjoy. <strong>You earn them.</strong></p>
       </div>
     </section>
 
-    <section class="how" id="how">
+    <section class="different" id="different">
       <div class="wrap">
-        <h2 class="section-title">How it works</h2>
-
-        <div class="step">
-          <div class="step-copy">
-            <span class="step-num">1</span>
-            <h3>Choose your <span class="hl-teal">productive</span> and <span class="hl-orange">unproductive</span> apps</h3>
-            <p>Pick the apps and websites you work in, and the ones that eat your time. Everything else is neutral and doesn't count either way. On your Mac, describe what you work on and Tythe judges websites for you.</p>
+        <h2 class="section-title reveal">What makes Tythe different from other iOS and Mac productivity apps?</h2>
+        <div class="grid-2">
+          <div class="tile contrast-tile reveal">
+            <p class="contrast-them">Blockers ban fun apps</p>
+            <p class="contrast-us">Tythe makes you <strong>earn</strong> them with productive work</p>
           </div>
-          <div class="step-visual step-visual-choices" aria-hidden="true">
-            <div class="chip chip-teal">Xcode</div>
-            <div class="chip chip-teal">Notion</div>
-            <div class="chip chip-teal">Google Docs</div>
-            <div class="chip chip-orange">YouTube</div>
-            <div class="chip chip-orange">Instagram</div>
-            <div class="chip chip-orange">Games</div>
-            <div class="chip chip-grey">Messages</div>
-            <div class="chip chip-teal">Figma</div>
-            <div class="chip chip-orange">TikTok</div>
+          <div class="tile contrast-tile reveal">
+            <p class="contrast-them">Phone-only or Mac-only tools</p>
+            <p class="contrast-us"><strong>One shared balance</strong> across iPhone and Mac</p>
           </div>
-        </div>
-
-        <div class="step">
-          <div class="step-copy">
-            <span class="step-num">2</span>
-            <h3>Productive work <span class="hl-teal">earns</span> credits</h3>
-            <p>Every minute in a productive app or website earns credits, on your Mac or your iPhone. You choose the rate, from 3 minutes of work for 1 credit up to 1 minute of work for 3 credits. Exercise from Apple Health can earn credits too.</p>
+          <div class="tile contrast-tile reveal">
+            <p class="contrast-them">Timers and streaks</p>
+            <p class="contrast-us">A visible <strong>credit balance</strong> you spend</p>
           </div>
-          <img class="step-visual" src="media/devices-earn.png" alt="Tythe on a Mac and an iPhone, both showing 38 credits earned" loading="lazy" width="1080" height="500">
-        </div>
-
-        <div class="step">
-          <div class="step-copy">
-            <span class="step-num">3</span>
-            <h3>Unproductive apps <span class="hl-orange">spend</span> them</h3>
-            <p>Social, video and games use your credits up, one credit per minute, on either device. Your Mac and iPhone share one balance, so credits earned on one can be spent on the other.</p>
+          <div class="tile contrast-tile reveal">
+            <p class="contrast-them">Sign-up walls</p>
+            <p class="contrast-us"><strong>No account</strong> — uses your existing iCloud</p>
           </div>
-          <img class="step-visual" src="media/devices-spend.png" alt="Watching YouTube on the Mac while the shared balance counts down to 7 credits" loading="lazy" width="1080" height="500">
-        </div>
-
-        <div class="step">
-          <div class="step-copy">
-            <span class="step-num">4</span>
-            <h3>Run out, and unproductive apps <span class="hl-orange">lock</span></h3>
-            <p>Until you do more productive work. On iPhone, Screen Time locks them. On Mac, a frosted lock screen covers them, even full-screen games. Earn more credits and they unlock on their own.</p>
-          </div>
-          <img class="step-visual" src="media/devices-lock.png" alt="The Mac lock screen saying YouTube is locked, and the iPhone lock screen saying you've used today's credits" loading="lazy" width="1080" height="500">
         </div>
       </div>
     </section>
 
     <section class="features" id="features">
       <div class="wrap">
-        <h2 class="section-title">Built for Apple, made to get out of your way.</h2>
+        <h2 class="section-title reveal">Built for Apple, made to get out of your way.</h2>
         <div class="grid-3">
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="13" height="10" rx="1.5"/><path d="M18 9h2.5a1.5 1.5 0 0 1 1.5 1.5v7a1.5 1.5 0 0 1-1.5 1.5H10"/><path d="M6 16v2M20 19v1"/></svg></div>
             <h3>One balance across your Mac and iPhone</h3>
             <p>Works seamlessly across devices signed into the same iCloud. Earn credits on one, spend them on the other, and stay in step automatically.</p>
           </div>
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 17l.7 1.8 1.8.7-1.8.7L19 22l-.7-1.8-1.8-.7 1.8-.7z"/></svg></div>
             <h3>Apple Intelligence judges your browsing</h3>
             <p>Describe the work you do, and Apple Intelligence can tell whether a Safari or Chrome page is productive or not, privately on your Mac.</p>
           </div>
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
             <h3>Earn credits from exercise</h3>
             <p>Optionally link your wearable through Apple Health. Apple Watch exercise minutes, or heart-rate minutes from other trackers, can earn credits too.</p>
           </div>
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15l4-8 4 5 3-3 5 6"/><circle cx="8" cy="7" r="1.5"/><circle cx="12" cy="12" r="1.5"/><circle cx="15" cy="9" r="1.5"/><circle cx="20" cy="15" r="1.5"/></svg></div>
             <h3>Set how strict earning feels</h3>
             <p>Change the rate that turns productive work into credits. Make it easier when you need a break, or stricter when you want more focus.</p>
           </div>
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
             <h3>No signup. Just start.</h3>
             <p>There's no account to create. Download Tythe, use your existing iCloud, and get going in a couple of minutes.</p>
           </div>
-          <div class="tile">
+          <div class="tile reveal">
             <div class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6z"/></svg></div>
             <h3>Fully native for Apple</h3>
             <p>Built for Apple with native integrations like Screen Time, iCloud, and Apple Health, so it feels seamless if you already live on Mac and iPhone.</p>
@@ -174,10 +193,10 @@
 
     <section class="pricing" id="pricing">
       <div class="wrap">
-        <h2 class="section-title">Simple pricing, when the time comes.</h2>
-        <p class="pricing-intro">One plan that covers Mac and iPhone. Pick the pace that suits you.</p>
+        <h2 class="section-title reveal">Simple pricing, when the time comes.</h2>
+        <p class="pricing-intro reveal">One plan that covers Mac and iPhone. Pick the pace that suits you.</p>
 
-        <div class="pricing-stage">
+        <div class="pricing-stage reveal">
           <div class="pricing-grid" aria-hidden="true">
             <div class="price-card">
               <h3>Monthly</h3>
@@ -230,47 +249,47 @@
 
     <section class="beta" id="beta">
       <div class="wrap beta-inner">
-        <div class="beta-copy">
+        <div class="beta-copy reveal">
           <h2>Join the free beta</h2>
           <p>Tythe is in beta on Apple's TestFlight. Only 9 lifetime slots remain for the first 100 testers. Read what TestFlight is, then continue when you're ready.</p>
           <a class="button button-light" href="beta.html">See how to join</a>
         </div>
-        <ol class="beta-steps">
+        <ol class="beta-steps reveal">
           <li><strong>Learn about TestFlight</strong> and why Tythe is there first.</li>
-          <li><strong>Install TestFlight</strong> from the App Store on your iPhone or Mac.</li>
-          <li><strong>Accept the invite</strong> and install Tythe. Using both devices? Do the same on the other one.</li>
+          <li><strong>Open your invite link</strong> — that link is your invite, no separate code needed.</li>
+          <li><strong>Install Tythe</strong> and finish setup. Using both devices? Do the same on the other one.</li>
         </ol>
       </div>
     </section>
 
     <section class="faq" id="faq">
       <div class="wrap narrow">
-        <h2 class="section-title">Questions</h2>
-        <details>
+        <h2 class="section-title reveal">Questions</h2>
+        <details class="reveal">
           <summary>Do I need both a Mac and an iPhone?</summary>
           <p>No. Tythe works on an iPhone on its own, a Mac on its own, or both together. With both, they share one balance.</p>
         </details>
-        <details>
+        <details class="reveal">
           <summary>Is it free?</summary>
           <p>Yes, the beta is free to join through TestFlight. The first 100 beta testers also keep Tythe free for life. After that, paid plans will start at $4 a month, $40 a year, or $100 once for lifetime access.</p>
         </details>
-        <details>
+        <details class="reveal">
           <summary>Who decides what's productive?</summary>
           <p>You do. You choose your productive and unproductive apps. On your Mac you can also describe your work, add websites, and correct any page Tythe gets wrong so it learns.</p>
         </details>
-        <details>
+        <details class="reveal">
           <summary>What happens when I run out of credits?</summary>
           <p>Your unproductive apps lock. On iPhone you'll see a Screen Time lock screen; on Mac a frosted lock screen covers the app. Do more productive work and they unlock automatically. Your productive apps always stay open.</p>
         </details>
-        <details>
+        <details class="reveal">
           <summary>Which browsers work on Mac?</summary>
           <p>Safari and Chrome.</p>
         </details>
-        <details>
+        <details class="reveal">
           <summary>What happens to my data?</summary>
           <p>Your activity stays on your devices and in your own private iCloud, which we can't see. Tythe can send a short anonymous daily summary to help improve the app, with no app or website names, times or health data. You can switch it off in Settings. Read the <a href="privacy.html">privacy policy</a>.</p>
         </details>
-        <details>
+        <details class="reveal">
           <summary>What do I need?</summary>
           <p>An iPhone with iOS 17 or later, or a Mac with macOS 14 or later. Both devices need to be signed in to the same Apple Account with iCloud Drive on to share a balance.</p>
         </details>
@@ -279,7 +298,7 @@
 
     <section class="support">
       <div class="wrap narrow">
-        <div class="card">
+        <div class="card reveal">
           <h2>Support</h2>
           <p>Questions, feedback or a problem? Email <a href="mailto:support@trytythe.com">support@trytythe.com</a> and I'll get back to you.</p>
           <p>Testing through TestFlight? You can also send feedback straight from the TestFlight app, or take a screenshot while using Tythe.</p>
@@ -297,5 +316,6 @@
       <span><a href="privacy.html">Privacy policy</a> &middot; <a href="mailto:support@trytythe.com">support@trytythe.com</a></span>
     </div>
   </footer>
+  <script src="site.js" defer></script>
 </body>
 </html>
